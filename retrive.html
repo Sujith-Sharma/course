@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Course Recommendation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    function logout() {
+      document.location.href = "logout.php";
+    }
+    function webevent() {
+      document.location.href = "web.php";
+    }
+  </script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+select {
+  width: 60%;
+  padding: 12px 20px; 
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #00004d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+*{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.bckbtn{
+  float: right;
+  background-color: #00004d;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+
+  }
+</style>
+</head>
+<body>
+  <h1 style="float: left;">Search Here:</h1>
+  <button class="bckbtn" onclick="logout();">LOGOUT</button>
+<button type="button" onclick="webevent()" class="bckbtn">WEBSITES</button>
+  <br><br><br><br>
+  <form action="retrive.php" method="get">
+<select name="Request">
+<option value="DataScience">Data Science</option>
+<option value="Web">Web</option>
+<option value="Python">Phython</option>
+<!-- <option value="RProgramming">R-Programming</option> -->
+<option value="AI">ArtificialIintelligence</option>
+<option value="ML">MachineLearning</option>
+<option value="OOC">ObjectOrientedConcepts</option>
+<!-- <option value="POP">ProcedureOrientedProgramming</option> -->
+
+</select>
+    <button type="submit" value="retrive" >Search</button>
+</form>
+
+<h1>Courses Available</h1>
+<div class="row">
+  <div class="column">
+    <img src="AI.jpg" alt="Snow" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence"><label>Artificial Intelligence</label></a>
+  </div>
+  <div class="column">
+    <img src="java.jpg" alt="Forest" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><label>Java programming</label></a>
+  </div>
+  <div class="column">
+    <img src="ML.jpeg" alt="Mountains" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/Machine_learning"><label>Machine Laernings</label></a>
+  </div>
+  <div class="column">
+    <img src="python.jpg" alt="Mountains" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><label>Python programming</label></a>
+  </div>
+</div>
+  <div class="row">
+  <div class="column">
+    <img src="C-prog.jpg" alt="Mountains" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><label>C-programming</label></a>
+  </div>
+  <div class="column">
+    <img src="webdev.jpg" alt="Mountains" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/Web_development"><label>Web development</label></a>
+  </div>
+  <div class="column">
+    <img src="R-prog.jpg" alt="Mountains" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/R_(programming_language)"><label>R-programming</label></a>
+  </div>
+  <div class="column">
+    <img src="DataScience.jpg" alt="Mountains" style="width:100%">
+    <a href="https://en.wikipedia.org/wiki/Data_science"><label>Data science</label></a>
+  </div>
+</div>
+
+
+</body>
+</html>

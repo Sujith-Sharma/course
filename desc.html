@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator using javascript</title>
+</head>
+<body>
+
+<h1 style="text-align: center;color: brown">simple calculator with javascript</h1>
+enter 1st no.<br> <input type="number" name="num1" id="num1"><br>
+enter 2nd no.<br> <input type="number" name="num2" id="num2"><br>
+<input type="button" value="+" onclick="performop(this.value);"><br>
+<input type="button" value="-" onclick="performop(this.value);"><br>
+<input type="button" value="*" onclick="performop(this.value);"><br>
+<input type="button" value="/" onclick="performop(this.value);"><br>
+result<br><input type="number" name="res" id="res" readonly /><br>
+<script type="text/javascript">
+	function performop(op)
+	{
+		var n1 = parseInt(document.getElementById("num1").value);
+		var n2 = parseInt(document.getElementById("num2").value);
+		var result = 0;
+		if(op=="+"){
+			result = n1+n1;
+		}
+		else if(op=="-"){
+			result = n1-n1;
+		}
+		else if(op=="*"){
+			result = n1*n1;
+		}
+		else {
+			result = n1/n1;
+		}
+		document.getElementById('res').value = result;
+		
+	}
+</script>
+
+
+</body>
+</html>

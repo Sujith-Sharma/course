@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>addadmin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+*{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.bckbtn{
+  float: right;
+  background-color: green;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+
+  }
+</style>
+</head>
+<body>
+  <h1 style="float: left;">Search Here:</h1><button class="bckbtn"><a href="admin.html">BACK</a></button>
+  <br><br><br><br>
+  <form action="adminadd.php" method="get">
+<select name="C_name">
+<option value="Datascience Basics">Data Science Basics</option>
+<option value="Python Basics">Python basics</option>
+<option value="Python">Phython</option>
+<option value="Java">Java</option>
+<option value="SQL">SQL</option>
+<option value="JavaScript">MachineLearning</option>
+<option value="OOC">ObjectOrientedConcepts</option>
+<option value="POP">ProcedureOrientedProgramming</option>
+
+ <label for="channel" ><b>channel(Maximum 20 characters)</b></label><br>
+    <input type="text" placeholder="Enter UserName" name="channel" required><br>
+
+    <label for="videoplaylists"><b>Video/Playlists( maximum 60 characters)</b></label><br>
+    <input type="text" placeholder="Enter video/playlist" name="channel" required><br>
+
+    <label for="host_name"><b>Host Name( maximum 20 characters)</b></label><br>
+    <input type="text" placeholder="Enter Host-Name" name="pshost_name" required><br>
+
+</select>
+    <button type="submit" value="adminadd" >Search</button>
+</form>
+
+
+
+
+</body>
+</html>

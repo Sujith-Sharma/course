@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style type="text/css">
+        button{
+            background-color: blue;
+            padding: 10px;
+            color: white;
+            border: none;
+            text-align: center;
+            bottom: 50px;
+            position: relative;
+            top: 20px;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            position: absolute;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>ONLINE COURSE RECOMENDATION</h1>
+    <div class="image">
+        <img class="image" src="index page.jpg">
+        <button type="button" onclick="stdlog()">STUDENT LOGIN</button>
+        <button type="button" onclick="admnlog()">ADMIN LOGIN</button>
+    </div>
+    
+    <script type="text/javascript">
+        function admnlog() {
+      document.location.href = "adminlog.html";
+    }
+    function stdlog() {
+      document.location.href = "login.html";
+    }
+    </script>
+</body>
+</html>

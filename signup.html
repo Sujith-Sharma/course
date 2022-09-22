@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href="login.css">
+<style type="text/css">
+  select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.age{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container{
+  color: white;
+}
+</style>
+<script type="text/javascript" src="signup.js">
+  
+
+</script>
+</head>
+<body>
+
+<h2 style="text-align: center;">Create a new Account </h2>
+
+<form action="signup.php" method="post" name="form1" onsubmit="return check()">
+  <div class="imgcontainer">
+    <img src="login.jpg" alt="Avatar" class="avatar" style="width: 160px; height: 160px">
+
+  </div>
+
+  <div class="container">
+    <label for="UserID" ><b>UserName(Maximum 20 characters)</b></label><br>
+    <input type="text" placeholder="Enter UserName" name="UserID" required><br>
+
+    <label for="UserID" ><b>MobileNumber(Maximum 10 characters)</b></label><br>
+    <input type="text" placeholder="Enter MobileNumber" name="PhNo" required><br>
+
+    <label for="sex"><b>Sex</b></label><br>
+  <select name="sex">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Others">Others</option>
+  </select><br>
+
+    <label for="psw"><b>Password( maximum 10 characters)</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+     
+    <label for="cpsw"><b>Confirm Password</b></label><br>
+    <input type="password" placeholder="Re-Enter Password" name="cpsw" id="cpsw" required><br>
+
+    <label for="age"><b>Age</b></label><br>
+    <input type="number" name="age" id="age" value="" class="age"><br>
+
+    <button type="submit" value="Insert" onclick="check()">SignIn</button><br>
+  </div>
+<p>By creating an account you agree to our <a href="terms.txt" style="color:dodgerblue">Terms & Privacy</a>.</p>
+ 
+</form>
+
+<div class="container">
+  <p style="text-align: center;">Already a Member?</p>
+<button  style="background-color: darkgreen" onclick="logevent()">Login here</button>
+</div>
+
+</body>
+</html>
+
